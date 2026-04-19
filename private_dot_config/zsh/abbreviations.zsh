@@ -6,7 +6,7 @@
 abbr g   'git'
 abbr gs  'git status -sb'
 abbr ga  'git add'
-abbr gc  'git commit'
+abbr gc  'git commit -m "%"'
 abbr gp  'git push'
 abbr gl  'git log --oneline -20'
 abbr gd  'git diff'
@@ -55,7 +55,7 @@ abbr mi  'mise install'
 
 # ===== chezmoi（dotfile管理） =====
 abbr cz   'chezmoi'
-abbr cze  'chezmoi edit ~/'
+abbr cze  'chezmoi edit ~/%'
 abbr czd  'chezmoi diff'
 abbr czap 'chezmoi apply'
 abbr czcd 'chezmoi cd'
