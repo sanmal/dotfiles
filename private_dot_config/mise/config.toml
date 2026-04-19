@@ -1,0 +1,7 @@
+[tools]
+chezmoi = "latest"
+deno = "latest"
+go = "latest"
+jj = "latest"
+neovim = "latest"
+node = "latest"
