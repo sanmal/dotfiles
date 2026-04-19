@@ -20,7 +20,7 @@ abbr jl  'jj log'
 abbr jll 'jj log --limit 20'
 abbr jd  'jj diff'
 abbr jn  'jj new'
-abbr jc  'jj commit -m""%"'
+abbr jc  'jj commit -m "%"'
 abbr je  'jj edit'
 abbr jsq 'jj squash'
 abbr jsp 'jj split'
@@ -55,11 +55,10 @@ abbr mi  'mise install'
 
 # ===== chezmoi（dotfile管理） =====
 abbr cz   'chezmoi'
-abbr cze  'chezmoi edit'
+abbr cze  'chezmoi edit ~/'
 abbr czd  'chezmoi diff'
 abbr czap 'chezmoi apply'
 abbr czcd 'chezmoi cd'
 
 # ===== よく使うシステムコマンド =====
-abbr please 'sudo'
 abbr reload 'exec zsh'   # reload 関数より軽量な再起動
