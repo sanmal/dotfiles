@@ -25,6 +25,7 @@ abbr je  'jj edit'
 abbr jsq 'jj squash'
 abbr jsp 'jj split'
 abbr jr  'jj rebase'
+abbr jbm 'jj bookmark set main -r @-'
 # jj git サブコマンド族
 abbr jg  'jj git'
 abbr jgp 'jj git push'
@@ -34,9 +35,10 @@ abbr jgf 'jj git fetch'
 abbr ports 'ss -tulanp'
 abbr myip  'curl -s ifconfig.me'
 abbr dfi   'df -hT'
+abbr seds  "sed 's|%||'"
 
 # ===== Pop!_OS / apt =====
-abbr update  'sudo apt update && sudo apt upgrade'
+abbr update  'sudo apt update && sudo apt upgrade -y'
 abbr install 'sudo apt install'
 # ※ 注: 'search' は一般的すぎるので避ける。aptsで代替
 abbr aptsr   'apt search'
