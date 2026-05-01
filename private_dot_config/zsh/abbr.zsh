@@ -26,9 +26,9 @@ abbr() {
 # abbr 一覧表示
 abbr-list() {
     local k
-    for k in "${(@k)ZSH_ABBREVIATIONS}"; do
+    for k in "${(@ok)ZSH_ABBREVIATIONS}"; do
         printf "%-10s => %s\n" "$k" "${ZSH_ABBREVIATIONS[$k]}"
-    done | sort
+    done
 }
 
 # abbr 削除
