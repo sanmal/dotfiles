@@ -50,7 +50,7 @@ abbr awk1  "awk '{print $1}'"
 
 
 # =====  apt =====
-abbr update  'sudo apt update && sudo apt upgrade -y'
+abbr updugr  'sudo apt update && sudo apt upgrade -y'
 abbr install 'sudo apt install'
 abbr aptsr   'apt search'
 abbr aptsh   'apt show'
