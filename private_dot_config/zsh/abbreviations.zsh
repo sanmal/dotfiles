@@ -3,10 +3,10 @@
 # スペース/Enter 押下時に展開される（abbr.zsh 参照）
 
 # ===== systemctl =====
-abbr sc  'sudo systemctl'
-abbr scs 'systemctl status'
-abbr scr 'sudo systemctl restart'
-abbr jctl 'journalctl'
+abbr sc    'systemctl'
+abbr scs   'systemctl status'
+abbr scr   'sudo systemctl restart'
+abbr jctl  'journalctl'
 abbr jctlu 'journalctl -u %'
 abbr jctlf 'journalctl -fu %'
 
