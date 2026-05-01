@@ -47,7 +47,7 @@ abbr myip  'curl -s ifconfig.me'
 abbr dfi   'df -hT'
 abbr seds  "sed 's|%||'"
 abbr awk1  "awk '{print $1}'"
-
+abbr less  '| less'
 
 # =====  apt =====
 abbr updugr  'sudo apt update && sudo apt upgrade -y'
