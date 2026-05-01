@@ -46,7 +46,7 @@ _zsh_abbr_expand() {
     _zsh_abbr_cursor_target=-1
 
     # 行頭または直前が空白の、連続する非空白文字を取得
-    local word="${LBUFFER##*[[:space:]]}"
+    local word="${LBUFFER##*[[:space:];|&(]}"
     [[ -z "$word" ]] && return 1
     local expansion="${ZSH_ABBREVIATIONS[$word]}"
     [[ -z "$expansion" ]] && return 1
