@@ -2,7 +2,15 @@
 # タイプ節約+実コマンド可視化したいものは abbr で
 # スペース/Enter 押下時に展開される（abbr.zsh 参照）
 
-# ===== Git（gitも併用するため最小限を残す） =====
+# ===== systemctl =====
+abbr sc  'sudo systemctl'
+abbr scs 'systemctl status'
+abbr scr 'sudo systemctl restart'
+abbr jctl 'journalctl'
+abbr jctlu 'journalctl -u %'
+abbr jctlf 'journalctl -fu %'
+
+# ===== Git =====
 abbr g   'git'
 abbr gs  'git status -sb'
 abbr ga  'git add'
@@ -13,7 +21,7 @@ abbr gd  'git diff'
 abbr gco 'git checkout'
 abbr gb  'git branch'
 
-# ===== Jujutsu（メインVCS） =====
+# ===== Jujutsu =====
 abbr j   'jj'
 abbr js  'jj status'
 abbr jl  'jj log'
@@ -26,21 +34,24 @@ abbr jsq 'jj squash'
 abbr jsp 'jj split'
 abbr jr  'jj rebase'
 abbr jbm 'jj bookmark set main -r @-'
-# jj git サブコマンド族
+# jj git サブコマンド
 abbr jg  'jj git'
 abbr jgp 'jj git push'
 abbr jgf 'jj git fetch'
 
-# ===== システム・ネットワーク（滅多に使わない=実コマンド思い出したい） =====
+# ===== システム・ネットワーク =====
+abbr psa   'ps aux'
+abbr psal  'ps aux | less %'
 abbr ports 'ss -tulanp'
 abbr myip  'curl -s ifconfig.me'
 abbr dfi   'df -hT'
 abbr seds  "sed 's|%||'"
+abbr awk1  "awk '{print $1}'"
 
-# ===== Pop!_OS / apt =====
+
+# =====  apt =====
 abbr update  'sudo apt update && sudo apt upgrade -y'
 abbr install 'sudo apt install'
-# ※ 注: 'search' は一般的すぎるので避ける。aptsで代替
 abbr aptsr   'apt search'
 abbr aptsh   'apt show'
 
@@ -50,17 +61,33 @@ abbr tl  'tmux list-sessions'
 abbr tn  'tmux new -s'
 abbr tk  'tmux kill-session -t'
 
-# ===== mise（ツールバージョン管理） =====
+# ===== mise =====
 abbr mls 'mise ls'
 abbr mu  'mise use'
 abbr mi  'mise install'
 
-# ===== chezmoi（dotfile管理） =====
+# ===== chezmoi =====
 abbr cz   'chezmoi'
 abbr cze  'chezmoi edit ~/%'
 abbr czd  'chezmoi diff'
 abbr czap 'chezmoi apply'
 abbr czcd 'chezmoi cd'
 
-# ===== よく使うシステムコマンド =====
+# ===== tar =====
+abbr tarx  'tar -zxvf'
+abbr tarc  'tar -zcvf'
+abbr untar 'tar -xvf'
+
+# ===== cargo =====
+# 'cc'はgccと重なるので使用不可
+abbr c   'cargo'
+abbr cb  'cargo build'
+abbr cr  'cargo run'
+abbr ct  'cargo test'
+abbr cch 'cargo check'
+abbr ccl 'cargo clipy'
+abbr cf  'cargo fmt'
+abbr ca  'cargo add %'
+
+# ===== システムコマンド =====
 abbr reload 'exec zsh'   # reload 関数より軽量な再起動
