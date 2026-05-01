@@ -91,4 +91,5 @@ abbr cf  'cargo fmt'
 abbr ca  'cargo add %'
 
 # ===== システムコマンド =====
+abbr abls   'abbr-list'
 abbr reload 'exec zsh'   # reload 関数より軽量な再起動
