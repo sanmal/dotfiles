@@ -49,7 +49,7 @@ abbr seds  "sed 's|%||'"
 abbr awk1  "awk '{print $1}'"
 abbr less  '| less'
 abbr head  '| head -%'
-abbr dvn   '/dev/null'
+abbr dvnl  '/dev/null'
 
 # =====  apt =====
 abbr updugr  'sudo apt update && sudo apt upgrade -y'
