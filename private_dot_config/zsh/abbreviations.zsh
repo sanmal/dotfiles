@@ -46,6 +46,7 @@ abbr ports 'ss -tulanp'
 abbr myip  'curl -s ifconfig.me'
 abbr dfi   'df -hT'
 abbr seds  "sed 's|%||'"
+abbr sedg  "sed 's|%||g"
 abbr awk1  "awk '{print $1}'"
 abbr less  '| less'
 abbr head  '| head -%'
